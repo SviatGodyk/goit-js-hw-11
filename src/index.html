@@ -8,6 +8,21 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <section class="gallery-section">
+      <div class="container">
+        <form class="search-form js-search-form">
+          <input
+            class="search-input js-search-input"
+            type="text"
+            name="user_query"
+            required
+          />
+          <button class="search-btn" type="submit">Search</button>
+          <div class="loader is-hidden">Loading</div>
+        </form>
+        <ul class="gallery js-gallery"></ul>
+      </div>
+    </section>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>
