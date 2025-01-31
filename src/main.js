@@ -1,5 +1,5 @@
-import { fetchPhotosByQuery } from './pixabay-api';
-import { createGalleryCardTemplate } from './render-functions';
+import { fetchPhotosByQuery } from './js/pixabay-api';
+import { createGalleryCardTemplate } from './js/render-functions';
 
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
