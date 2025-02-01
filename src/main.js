@@ -19,6 +19,8 @@ const searchFromSubmit = event => {
   const searchQuery = event.currentTarget.elements.user_query.value.trim();
 
   if (searchQuery === '') {
+    hideLoader();
+
     iziToast.error({
       title: 'Error!',
       message:
@@ -59,7 +61,7 @@ const searchFromSubmit = event => {
     .catch(err => {
       console.log(err);
     })
-    .finally(hideLoader());
+    .finally(() => hideLoader());
 };
 
 const showLoader = () => loader.classList.remove('is-hidden');
